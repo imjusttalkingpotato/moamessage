@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>모아메시지 · 개인정보처리방침</title>
+  <style>
+:root{--ink:#202e2a;--muted:#78837d;--green:#285b49;--pale:#eaf1eb;--line:#e3e7e1;--paper:#fafbf8;--orange:#a3633a}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;letter-spacing:-.025em}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:wait}a{color:inherit;text-decoration:none}.layout{display:flex;min-height:100vh}.sidebar{width:236px;padding:42px 23px;border-right:1px solid var(--line);display:flex;flex-direction:column;background:#f3f5ef;flex-shrink:0}.brand{font-size:24px;font-weight:750;display:flex;align-items:center;gap:8px;white-space:nowrap;margin-bottom:56px}.brand-mark{display:grid;place-items:center;width:32px;height:32px;flex-shrink:0;background:var(--green);color:#fff;border-radius:11px;font:italic 28px Georgia}.nav-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.04em;margin-bottom:15px}.nav-item{border:0;background:transparent;display:flex;align-items:center;width:100%;padding:15px 14px;border-radius:9px;color:#67726b;text-align:left;font-size:14px;margin:5px 0;gap:12px}.nav-item.selected{background:#e2ebdf;color:var(--green);font-weight:700}.nav-count{margin-left:auto;font-size:12px;font-variant-numeric:tabular-nums}.nav-symbol{width:17px;text-align:center}main{flex:1;padding:0 46px 36px;min-width:0}.toolbar{height:91px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:14px}.crumb{font-size:12px;color:var(--muted)}.crumb span{margin:0 14px;color:#b5bcb6}.toolbar-actions{display:flex;align-items:center;gap:12px}.status{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:7px}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:#adb5ad}.status.connected:before{background:#608767}.button{padding:11px 16px;border-radius:7px;border:1px solid var(--line);font-size:12px;font-weight:600}.secondary{background:white;color:var(--ink)}.primary{background:var(--green);color:white;border-color:var(--green)}.danger{background:#a44336;color:white;border-color:#a44336}.icon-button{border:0;background:transparent;color:var(--muted);font-size:12px;padding:10px}.heading{padding:43px 0 31px}.eyebrow{font-size:10px;letter-spacing:.16em;color:#6c846f;font-weight:600}.heading h1{font-size:35px;line-height:1.4;letter-spacing:-.055em;font-weight:650;margin:13px 0 13px}.heading p{color:var(--muted);font-size:13px}.content-grid{display:grid;grid-template-columns:minmax(420px,1fr) 237px;gap:28px}.inbox{min-width:0}.list-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:4px 0 24px}.list-heading h2{font-size:18px;font-weight:650;margin:0 0 8px}.list-heading span{font-size:11px;color:var(--muted)}.text-button{background:none;border:0;color:var(--green);font-size:11px;padding:7px 0;font-weight:600}.filters{display:flex;gap:10px;margin-bottom:15px;align-items:center}.search{height:40px;display:flex;gap:9px;align-items:center;background:white;border:1px solid var(--line);border-radius:7px;padding:0 12px;flex:1}.search span{font-size:25px;line-height:1;color:var(--muted)}.search input{border:0;outline:0;width:100%;background:none;font-size:12px;min-width:60px}.filters select{height:40px;border:1px solid var(--line);border-radius:7px;padding:0 9px;font-size:11px;background:white;color:#68746c}.read-filter{font-size:11px;white-space:nowrap;color:var(--muted);display:flex;align-items:center;gap:5px}input[type=checkbox]{accent-color:var(--green)}.messages{display:flex;flex-direction:column;gap:10px;min-height:380px}.message{background:white;border:1px solid var(--line);border-radius:10px;padding:19px 20px;display:flex;gap:13px;transition:opacity .2s}.message.read{opacity:.55}.app-avatar{width:34px;height:34px;border-radius:10px;flex-shrink:0;display:grid;place-items:center;font-size:12px;font-weight:700;background:#edf1ee;color:var(--green)}.app-avatar.kakao{background:#f5efbd;color:#5b5123}.app-avatar.instagram{background:#f4e4ef;color:#9f5b89}.app-avatar.discord{background:#e8eafa;color:#61649a}.app-avatar.gmail{background:#f6e8e3;color:#ae6455}.message-content{flex:1;min-width:0}.message-top{display:flex;align-items:center;gap:8px;font-size:12px}.sender{font-weight:650;overflow-wrap:anywhere}.app-name{font-size:10px;color:var(--muted)}.message-time{margin-left:auto;color:#939b93;font-size:10px;white-space:nowrap}.message-body{font-size:13px;line-height:1.65;margin:9px 0 11px;white-space:pre-wrap;overflow-wrap:anywhere}.message-bottom{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.badge{font-size:10px;border-radius:5px;padding:4px 7px;background:var(--pale);color:var(--green)}.badge.p1{background:#f7eee5;color:var(--orange)}.badge.p3{background:#f0f1ef;color:#7c857b}.reason{font-size:10px;color:var(--muted);overflow-wrap:anywhere}.message-actions{margin-left:auto;display:flex;gap:7px}.message-actions select{max-width:110px;border:0;background:#f8f9f6;border-radius:5px;padding:4px 5px;color:#6b766d;font-size:10px}.read-button{border:1px solid var(--line);background:white;border-radius:5px;padding:4px 8px;font-size:10px;color:var(--green)}.engine{font-size:9px;color:#8c948b}.list-footer{display:flex;justify-content:space-between;color:#899288;font-size:10px;margin:18px 0;gap:10px}.privacy-card{padding:27px 18px 15px;margin-top:0;border:1px solid var(--line);border-radius:12px;background:#f7f8f4}.privacy-icon{font-size:30px;color:#668368}.privacy-card h3{font-size:15px;margin:15px 0 10px}.privacy-card p{font-size:11px;line-height:1.85;color:var(--muted)}.privacy-card ul{list-style:none;padding:0;margin:20px 0;font-size:10px;color:#748270}.privacy-card li{margin:11px 0}.privacy-card li:before{content:"✓";margin-right:7px;color:var(--green)}.aside-note{font-size:10px;line-height:1.8;color:#979e93;padding:0 10px}.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:380px;border:1px dashed #d8dfd4;border-radius:12px;color:var(--muted);padding:40px;text-align:center}.empty-icon{font-size:36px;color:#7c9778;margin-bottom:18px}.empty h3{font-size:15px;color:#576950;font-weight:600}.empty p{font-size:12px;line-height:1.8;max-width:320px}.notice{background:#eef2e6;border:1px solid #d9e2cc;color:#64754e;font-size:12px;border-radius:8px;padding:12px 16px;margin-bottom:22px}.notice.error{background:#f9ece9;border-color:#f0d1c9;color:#a35d50}dialog{border:1px solid var(--line);border-radius:15px;padding:30px;max-width:540px;width:calc(100vw - 30px);color:var(--ink);box-shadow:0 20px 80px #223c2822}dialog::backdrop{background:#21362f66;backdrop-filter:blur(4px)}.dialog-heading{display:flex;justify-content:space-between;align-items:flex-start}.dialog-heading h2{font-size:23px;margin:9px 0 14px}dialog p{font-size:12px;line-height:1.8;color:var(--muted)}.step{display:flex;gap:15px;margin:25px 0}.step>span{font:23px Georgia;color:#95a48b}.step>div{flex:1}.step h3{font-size:14px;margin:3px 0 14px}.step label{display:block;font-size:11px;color:var(--muted)}.step select{display:block;width:100%;padding:9px;border:1px solid var(--line);border-radius:6px;margin:8px 0 13px;background:white}.file-button{border:1px solid var(--line);border-radius:6px;padding:9px;cursor:pointer}.file-button input{display:block;width:100%;margin-top:8px;font-size:11px}.success-note{padding:12px;background:var(--pale);font-size:12px;border-radius:6px;margin-bottom:13px}.error{color:#a44336!important}[hidden]{display:none!important}:focus-visible{outline:2px solid #799c76;outline-offset:3px}@media(min-width:1500px){main{max-width:1380px;padding-left:70px;padding-right:70px}.content-grid{grid-template-columns:minmax(420px,1fr) 260px}}@media(max-width:1100px){.sidebar{width:200px;padding:35px 15px}main{padding:0 25px 30px}.content-grid{grid-template-columns:minmax(0,1fr)}.insights{display:none}.heading h1{font-size:31px}}@media(max-width:680px){.layout{display:block}.sidebar{width:auto;border-right:0;border-bottom:1px solid var(--line);padding:17px 20px}.brand{font-size:23px;margin-bottom:0}.brand-mark{width:29px;height:29px;font-size:25px}.nav-label{display:none}.sidebar nav{display:flex;gap:2px;margin-top:12px;overflow:auto}.nav-item{font-size:11px;padding:9px 10px;gap:5px;white-space:nowrap;width:auto}.nav-count{margin-left:3px}.nav-symbol{display:none}main{padding:0 18px 20px}.toolbar{height:65px}.crumb{display:none}.toolbar-actions{width:100%;justify-content:flex-end}.heading{padding:28px 0 23px}.heading h1{font-size:27px}.heading p{font-size:12px}.list-heading{align-items:flex-start}.filters{flex-wrap:wrap}.search{flex-basis:65%}.filters select{flex:1}.read-filter{margin-left:auto}.message{padding:14px 12px;gap:10px}.message-time{font-size:9px}.message-top{flex-wrap:wrap}.message-body{font-size:12px}.message-actions{width:100%;margin-left:0;justify-content:flex-end}.reason{max-width:240px}.list-footer{font-size:9px}}
+.message-body.is-collapsed{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;max-height:var(--collapsed-body-height,4.95em);overflow:hidden}
+.nav-item>span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+.badge.p1{background:#f8e7e3;color:#a44336}
+.badge.p2{background:#f7eee5;color:var(--orange)}
+.badge.p3{background:var(--pale);color:var(--green)}
+.badge.p4{background:#f0f1ef;color:#7c857b}
+.message-actions select{max-width:140px}
+@media(max-width:680px){.sidebar nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;overflow:visible}.sidebar .nav-item{width:100%;min-width:0;margin:0;white-space:normal;gap:6px}.sidebar .nav-count{margin-left:auto;flex-shrink:0}}
+.body-toggle{display:block;background:none;border:0;padding:5px 0;margin:-3px 0 10px;color:var(--green);font-size:12px;line-height:1.5;font-weight:600;text-align:left}
+.body-toggle:hover{text-decoration:underline;text-underline-offset:3px}
+.pagination{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0 16px;min-width:0}
+.pagination .button{min-height:40px;min-width:76px;padding:10px 12px}
+.pagination .button:disabled{cursor:default}
+.pagination-label{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:center;overflow-wrap:anywhere;min-width:0}
+.list-footer{flex-wrap:wrap}
+.delete-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 15px;min-width:0}
+.delete-toolbar .button{min-height:40px}
+.delete-toolbar .button:disabled{cursor:default}
+.delete-selection-label{flex:1;min-width:140px;font-size:11px;line-height:1.6;color:var(--muted);overflow-wrap:anywhere}
+.delete-toolbar .danger{margin-left:auto}
+.message-selection{display:flex;justify-content:center;align-items:flex-start;width:28px;min-height:32px;flex-shrink:0;cursor:pointer;padding-top:3px}
+.message-selection input{width:18px;height:18px;margin:0}
+.message.is-delete-mode{opacity:1}
+.message.is-selected{border-color:#85a389;background:#f3f7f1}
+.delete-dialog-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:680px){.delete-selection-label{order:3;flex-basis:100%;min-width:0}.message-selection{width:24px}}
+
+.connection-details{min-width:0;text-align:right}.connection-summary{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap}.phone-status{display:block;margin-top:6px;font-size:10px;color:var(--muted);overflow-wrap:anywhere}.toolbar{min-height:91px;height:auto;padding:18px 0}.toolbar-actions{flex-wrap:wrap}.connection-details{flex-basis:auto}@media(max-width:680px){.toolbar{min-height:84px;padding:12px 0}.connection-details{flex-basis:100%;text-align:left}.connection-summary{justify-content:flex-start}.phone-status{font-size:10px}}
+.ai-panel{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;border:1px solid var(--line);border-radius:10px;background:#f3f6ef;padding:14px 18px;margin-bottom:24px;min-width:0}.ai-summary{display:flex;align-items:center;flex-wrap:wrap;gap:12px;min-width:0}.ai-summary strong{font-size:12px;font-weight:600;overflow-wrap:anywhere}.ai-controls{display:flex;align-items:center;gap:16px;margin-left:auto}.ai-controls label{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted)}.ai-panel p{flex-basis:100%;font-size:11px;line-height:1.7;color:var(--muted);margin:0;overflow-wrap:anywhere}.ai-panel #ai-install-guide{color:var(--green)}@media(max-width:680px){.ai-panel{padding:12px;gap:8px}.ai-controls{margin-left:0;flex-basis:100%;justify-content:space-between}}
+.ai-work-panel{border:1px solid var(--line);border-radius:10px;background:#f3f7f0;padding:14px 18px;margin:-12px 0 24px;min-width:0}.ai-work-summary{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.ai-work-summary strong{font-size:12px;font-weight:600;overflow-wrap:anywhere}.ai-work-summary span{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}.ai-work-panel p{font-size:12px;line-height:1.65;margin:8px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.ai-work-panel #ai-work-empty{font-size:11px;color:var(--muted)}@media(max-width:680px){.ai-work-panel{padding:12px}}
+
+.ai-work-counts{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:10px;font-size:12px;color:#5d6760}.ai-work-count-source{font-size:11px;color:#7a817c}
+
+#ai-work-message:not([hidden]){display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+
+.setup-guide{margin:0 0 24px;padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:#fff;min-width:0}
+.setup-guide summary{color:var(--green);font-size:13px;font-weight:650;cursor:pointer}
+.setup-guide summary:focus-visible,.policy-link:focus-visible{outline:2px solid var(--green);outline-offset:4px;border-radius:2px}
+.setup-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:16px 0 12px;padding-left:20px;list-style:decimal-leading-zero}
+.setup-steps li{padding-left:3px;font-size:12px;color:var(--green);min-width:0}
+.setup-steps h2{font-size:12px;line-height:1.6;margin:0 0 5px;color:var(--ink);font-weight:650}
+.setup-steps p,.setup-note{font-size:11px;line-height:1.8;margin:0;color:var(--muted);overflow-wrap:anywhere}
+.setup-note{padding-top:10px;border-top:1px solid var(--line)}
+.policy-link{display:inline-block;color:var(--green);font-size:11px;line-height:1.8;text-decoration:underline;text-underline-offset:3px;margin-top:10px}
+.privacy-card .policy-link{display:block}
+.policy-page{background:var(--paper)}
+.policy-page .policy-document{max-width:800px;margin:0 auto;padding:36px 36px 48px}
+.policy-heading .brand{margin-bottom:38px}
+.policy-heading h1{font-size:30px;line-height:1.4;letter-spacing:-.04em;margin:14px 0 10px}
+.policy-document p,.policy-document dd{font-size:14px;line-height:1.85;overflow-wrap:anywhere}
+.policy-date{color:var(--muted)}
+.policy-status{border:1px solid var(--line);border-radius:8px;background:var(--pale);padding:12px 15px;color:var(--green)}
+.policy-document section{margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+.policy-document h2{font-size:17px;line-height:1.5;margin:0 0 12px}
+.policy-contact{margin:12px 0}
+.policy-contact div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;margin:8px 0;align-items:baseline}
+.policy-contact dt{font-size:13px;font-weight:600;line-height:1.8;color:var(--muted)}
+.policy-contact dd{margin:0;min-width:0}
+.policy-document a:not(.brand){color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.policy-footer{font-size:13px;margin-top:32px;padding-top:22px;border-top:1px solid var(--line)}
+@media(max-width:800px){.setup-steps{grid-template-columns:1fr;gap:12px}}
+@media(max-width:680px){.setup-guide{padding:12px}.policy-page .policy-document{padding:24px 20px 36px}.policy-heading h1{font-size:26px}.policy-heading .brand{margin-bottom:28px}.policy-contact div{grid-template-columns:1fr;gap:2px}}
+
+</style>
+</head>
+<body class="policy-page">
+  <main class="policy-document">
+    <header class="policy-heading">
+      <div class="brand" ><span class="brand-mark">m</span>모아메시지</div>
+      <div class="eyebrow">PRIVACY</div>
+      <h1>개인정보처리방침</h1>
+      <p class="policy-date">작성일: 2026년 10월 13일</p>
+      <p id="privacy-status" class="policy-status" role="status">개발자·문의처·공개 주소가 등록되어 있습니다.</p>
+      <p>모아메시지는 선택한 앱의 알림을 한곳에 모아 규칙과 기기 내 AI로 분류합니다. 휴대폰만 사용할 수 있으며, PC 연결과 AI 사용은 선택 사항입니다.</p>
+    </header>
+    <section aria-labelledby="data-heading">
+      <h2 id="data-heading">1. 처리하는 정보와 목적</h2>
+      <p>사용자가 안드로이드 알림 접근을 허용하면, 선택한 앱의 알림에 포함된 앱 이름, 보낸 사람·제목, 본문, 수집 시각과 제공되는 메시지 시각을 처리합니다. 알림 목록, 분류 결과, 확인·삭제 상태와 사용자가 설정한 규칙·AI 판단 지침은 알림 정리와 기기 간 동기화에 사용합니다.</p>
+      <p>원래 메신저의 전체 대화 기록이나 계정에 직접 접속하지 않습니다. 알림에 표시되지 않은 대화나 첨부파일은 가져오지 않습니다. 알림 접근을 끄거나 수집할 앱을 변경하면 이후 수집을 제어할 수 있습니다. 설정한 저장 제외 규칙에 해당하는 알림은 보관하지 않습니다.</p>
+    </section>
+    <section aria-labelledby="local-heading">
+      <h2 id="local-heading">2. AI 처리와 전송</h2>
+      <p>모바일 AI는 해당 휴대폰에서, PC AI는 사용자가 연결한 PC에서 실행합니다. AI 분류를 위해 알림을 외부 AI 서비스로 보내지 않습니다. PC AI 사용 시 연결된 PC가 알림을 메모리에서 복호화해 분석하므로, 본인이 관리하는 PC에만 연결하세요.</p>
+      <p>휴대폰과 PC 사이의 알림·분류 결과는 암호화해 전달합니다. 모델 설치에는 별도의 다운로드가 필요할 수 있지만, 모델 다운로드와 알림 분석은 별개의 작업입니다.</p>
+    </section>
+    <section aria-labelledby="storage-heading">
+      <h2 id="storage-heading">3. 저장 위치와 연결 파일</h2>
+      <p>휴대폰에서는 앱 전용 내부 저장소에 알림을 암호화해 보관합니다. PC에서는 로컬 데이터 폴더에 동기화 암호문을 보관하며, PC 브라우저 저장소에도 암호화된 알림과 전송 대기 기록이 남을 수 있습니다. PC AI에 전달한 분석 원문은 처리 중 메모리에서 사용합니다.</p>
+      <p>연결 파일에는 접속 정보와 알림을 열 수 있는 비밀 키가 포함됩니다. 이 파일은 사용자가 저장한 위치에 남으며, 브라우저는 비밀 키를 사용 중 메모리에서만 유지합니다. 연결 파일을 채팅방이나 공개 저장소에 올리지 마세요. PC 알림함 잠금은 화면 표시와 PC AI 처리를 중단하며, 저장된 암호문이나 연결 파일을 삭제하는 기능은 아닙니다.</p>
+    </section>
+    <section aria-labelledby="retention-heading">
+      <h2 id="retention-heading">4. 보관 기간과 삭제</h2>
+      <p>알림은 모아메시지가 수집한 시각부터 7일이 지나면 목록에서 제외합니다. 저장 기록은 앱과 PC 프로그램이 실행되는 동안 정리합니다. 꺼져 있는 기기의 기록은 다음 실행 때 정리되며, 동기화에 필요한 삭제 요청 등 최소 기록은 전달 완료까지 남을 수 있습니다. PC 중계에 전달된 암호문은 수신 시각부터 최대 7일 동안 정리 대상에 남을 수 있습니다.</p>
+      <p>사용자는 알림을 직접 선택해 삭제하거나 ‘연결된 알림 보관함 비우기’를 사용할 수 있습니다. 연결된 기기에는 동기화 때 삭제가 반영됩니다. 오프라인 기기는 다시 연결될 때 반영되며, 연결을 해제한 휴대폰의 기록은 해당 기기에서 직접 지워야 합니다.</p>
+      <p>모아메시지에서 삭제해도 원래 메신저의 메시지, 사용자가 저장한 연결 파일·내보낸 복사본·별도 백업은 삭제되지 않습니다. 저장장치와 운영체제가 남긴 흔적까지 물리적으로 복구할 수 없게 지우는 것을 보장하지 않습니다.</p>
+    </section>
+    <section aria-labelledby="controls-heading">
+      <h2 id="controls-heading">5. 사용자가 선택할 수 있는 것</h2>
+      <p>휴대폰 설정에서 수집할 앱, 분류 규칙, AI 판단 지침, AI 사용 기기와 우선순위를 변경할 수 있습니다. PC에서는 ‘기기 연결’과 ‘보관 설정’에서 연결과 보관함을 관리합니다. 알림함의 ‘확인’ 표시는 카카오톡 등 원래 앱의 읽음 상태와 별개입니다.</p>
+      <p>‘모든 모바일 연결 해제’는 PC 접근과 PC 보관함을 정리합니다. 이미 연결했던 휴대폰의 내부 기록이나 사용자가 직접 저장한 파일은 별도로 관리해야 합니다.</p>
+    </section>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">6. 개발자와 문의</h2>
+      <dl class="policy-contact">
+        <div><dt>개발자</dt><dd id="privacy-developer">talkingpotato</dd></div>
+        <div><dt>문의 이메일</dt><dd id="privacy-contact">imjusttalkingpotato@gmail.com</dd></div>
+        <div><dt>공개 방침 주소</dt><dd><span id="privacy-url-pending"><a href="https://imjusttalkingpotato.github.io/moamessage/privacy.html">https://imjusttalkingpotato.github.io/moamessage/privacy.html</a></span></dd></div>
+      </dl>
+      <p>현재 안내는 이 버전의 동작을 기준으로 작성했습니다. 정보 처리 방식이나 문의처가 확정·변경되면 이 페이지의 작성일과 안내를 갱신합니다.</p>
+    </section>
+    <section aria-labelledby="hosting-heading">
+      <h2 id="hosting-heading">7. 공개 웹페이지 호스팅</h2>
+      <p>이 개인정보처리방침 웹페이지는 GitHub Pages에서 제공합니다. GitHub는 페이지 방문자의 IP 주소를 보안 목적으로 기록하고 보관합니다. 이는 공개 문서 방문에 따른 처리이며, 모아메시지의 알림 분석은 사용자가 선택한 휴대폰 또는 PC에서 이루어집니다.</p>
+    </section>
+    <footer class="policy-footer">모아메시지 개인정보처리방침</footer>
+  </main>
+</body>
+</html>
