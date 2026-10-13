@@ -4,7 +4,7 @@
 
 - [개인정보처리방침](privacy.html)
 - 개발자: talkingpotato
-- 개인정보·삭제 문의: imjusttalkingpotato@gmail.com
+- 문의: imjusttalkingpotato@gmail.com
 
 HTML에는 스타일이 포함되어 있으며 PC 프로그램이나 별도 API 없이 열 수 있습니다.
 앱 설치 파일, 알림·메시지, 연결 파일과 비밀 키는 포함하지 않습니다.
