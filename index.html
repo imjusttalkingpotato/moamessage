@@ -9,7 +9,7 @@
     *{box-sizing:border-box}body{margin:0;background:#fafbf8;color:#202e2a;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
     main{max-width:700px;margin:60px auto;padding:32px 28px;background:#fff;border:1px solid #e3e7e1;border-radius:14px}
     .brand{color:#285b49;font-size:15px;font-weight:700}h1{font-size:28px;line-height:1.4;margin:20px 0 14px}p,dd{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
-    .policy{display:inline-block;margin:12px 0 20px;padding:12px 18px;background:#285b49;border-radius:7px;color:white;text-decoration:none;font-weight:600}
+    .links{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 20px}.policy{display:inline-block;padding:12px 18px;background:#285b49;border-radius:7px;color:white;text-decoration:none;font-weight:600}.guide{background:#eff4ef;color:#285b49}
     a:focus-visible{outline:2px solid #285b49;outline-offset:4px}dl{padding-top:20px;border-top:1px solid #e3e7e1}dt{font-size:12px;color:#78837d;margin-top:12px}dd{margin:4px 0 0}dd a{color:#285b49}.pending{color:#78837d;font-size:12px}
     @media(max-width:740px){main{margin:24px 16px;padding:26px 20px}h1{font-size:25px}}
   </style>
@@ -18,8 +18,11 @@
   <main>
     <div class="brand">모아메시지</div>
     <h1>공개 문서</h1>
-    <p>선택한 앱의 알림을 한곳에 모아 분류하는 모아메시지의 개인정보 안내입니다.</p>
-    <a class="policy" href="privacy.html">개인정보처리방침 보기</a>
+    <p>선택한 앱의 알림을 한곳에 모아 분류하는 모아메시지의 사용 안내와 개인정보 안내입니다.</p>
+    <nav class="links" aria-label="공개 안내 문서">
+      <a class="policy guide" href="pc-setup.html">PC 설치·연결 방법</a>
+      <a class="policy" href="privacy.html">개인정보처리방침 보기</a>
+    </nav>
     <dl>
       <dt>개발자</dt><dd>talkingpotato</dd>
       <dt>문의</dt><dd><a href="mailto:imjusttalkingpotato@gmail.com">imjusttalkingpotato@gmail.com</a></dd>

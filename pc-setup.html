@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>모아메시지 · PC 설치·연결 방법</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#fafbf8;color:#202e2a;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+    main{max-width:700px;margin:60px auto;padding:32px 28px;background:#fff;border:1px solid #e3e7e1;border-radius:14px}
+    .brand{color:#285b49;font-size:15px;font-weight:700}
+    h1{font-size:28px;line-height:1.4;margin:20px 0 14px}
+    h2{font-size:20px;line-height:1.5;margin:0 0 14px}
+    h3{font-size:16px;line-height:1.6;margin:20px 0 8px}
+    p,li{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+    p{margin:10px 0}ol,ul{padding-left:24px;margin:10px 0}li+li{margin-top:8px}
+    a{color:#285b49;text-underline-offset:3px}a:focus-visible{outline:2px solid #285b49;outline-offset:4px}
+    section{margin-top:28px;padding-top:24px;border-top:1px solid #e3e7e1}
+    .pending{margin:20px 0;padding:16px 18px;background:#f4f7f0;border:1px solid #ccd8c9;border-radius:8px}
+    .pending p{margin:0}.pending p+p{margin-top:8px}
+    .note{padding:12px 16px;background:#f6f8f5;border-radius:7px}
+    .document-nav{display:flex;flex-wrap:wrap;gap:12px 20px;font-size:14px;line-height:1.8}
+    .updated{font-size:12px;color:#5d6b62;margin-top:20px}
+    footer{margin-top:28px;padding-top:20px;border-top:1px solid #e3e7e1}
+    @media(max-width:740px){main{margin:24px 16px;padding:26px 20px}h1{font-size:25px}h2{font-size:19px}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">모아메시지</div>
+    <h1>PC 설치·연결 방법</h1>
+    <p>PC와 연결하면 휴대폰에서 모은 알림을 PC에서도 확인할 수 있습니다. PC 연결은 선택 사항이며 휴대폰만 사용할 수도 있습니다.</p>
+    <div class="pending">
+      <p><strong>PC 설치 파일 공개 다운로드는 준비 중입니다. 파일을 전달받았다면 아래 안내로 연결하세요.</strong></p>
+      <p>현재 설치 앱은 Apple Silicon Mac의 macOS 13 이상용 후보입니다. 공개 배포 전 서명·공증과 검증이 남아 있습니다. Windows와 Intel Mac용 설치 파일은 아직 공개하지 않았습니다.</p>
+    </div>
+    <nav class="document-nav" aria-label="안내 순서">
+      <a href="#install">PC 설치·실행</a>
+      <a href="#connect">휴대폰 연결</a>
+      <a href="#troubleshoot">연결이 안 될 때</a>
+    </nav>
+
+    <section id="install" aria-labelledby="install-title">
+      <h2 id="install-title">1. PC 설치·실행</h2>
+      <p>전달받은 파일에 맞는 방법을 사용하세요.</p>
+      <h3>Mac용 DMG를 전달받은 경우</h3>
+      <ol>
+        <li>DMG를 열고 <strong>모아메시지 앱을 Applications(응용 프로그램) 폴더로 옮깁니다.</strong></li>
+        <li>응용 프로그램 폴더에서 모아메시지를 실행합니다.</li>
+        <li>앱 창의 <strong>알림함 열기</strong>를 눌러 PC 알림함을 엽니다. Node.js는 앱에 포함되어 있습니다.</li>
+      </ol>
+      <h3>기존 시작 파일(.command)과 프로그램 폴더를 전달받은 경우</h3>
+      <ol>
+        <li>전달받은 프로그램 폴더 전체를 보관하고, 그 안의 <strong>모아메시지_시작.command</strong>를 더블클릭합니다. 이 방식은 Node.js 22 이상과 OpenSSL이 필요합니다.</li>
+        <li>실행에 성공하면 브라우저에서 PC 알림함이 열립니다. 사용하는 동안 실행된 터미널 창을 유지합니다.</li>
+        <li>프로그램을 종료하려면 해당 터미널에서 <strong>Control(⌃)+C</strong>를 누릅니다. 브라우저 창만 닫으면 PC 프로그램은 계속 실행됩니다.</li>
+      </ol>
+      <p class="note">PC에서 알림을 받으려면 PC 프로그램이 실행 중이어야 합니다. DMG 앱과 기존 시작 파일을 동시에 실행하면 포트가 충돌할 수 있으므로 한 가지 방식으로 실행하세요.</p>
+    </section>
+
+    <section id="connect" aria-labelledby="connect-title">
+      <h2 id="connect-title">2. 휴대폰과 연결</h2>
+      <ol>
+        <li><strong>PC와 휴대폰을 같은 Wi-Fi에 연결합니다.</strong> 휴대폰의 모바일 핫스팟을 켜고 PC를 그 핫스팟에 연결해도 됩니다.</li>
+        <li>PC 알림함 위의 <strong>기기 연결</strong>을 엽니다. 현재 PC 주소를 선택하고 <strong>연결 파일 만들기 → 연결 파일 저장</strong>을 누릅니다.</li>
+        <li>저장한 <strong>moa-message-connection.json</strong> 파일을 USB 등 안전한 방법으로 휴대폰에 옮깁니다.</li>
+        <li>휴대폰의 모아메시지 <strong>설정 → PC 연결 파일 가져오기</strong>에서 옮긴 파일을 선택합니다.</li>
+        <li>휴대폰에서 <strong>지금 동기화</strong>를 누릅니다. 수집된 알림이 PC 알림함에 나타나는지 확인합니다.</li>
+      </ol>
+      <p class="note"><strong>연결 파일에는 알림을 열 수 있는 비밀 키가 있습니다.</strong> 채팅방이나 공개 저장소에 공유하지 말고 안전하게 보관하세요. PC 알림함을 잠그거나 다시 열었을 때는 <strong>기기 연결 → 기존 연결 파일 열기</strong>에서 같은 파일을 선택합니다.</p>
+      <p>PC 알림함의 ‘확인’ 표시는 카카오톡 등 원래 앱의 읽음 상태와 별개입니다.</p>
+    </section>
+
+    <section id="troubleshoot" aria-labelledby="troubleshoot-title">
+      <h2 id="troubleshoot-title">3. 연결이 안 될 때</h2>
+      <ul>
+        <li>PC 프로그램이 실행 중인지, 두 기기가 같은 Wi-Fi나 휴대폰 핫스팟에 연결되어 있는지 확인합니다. 게스트 Wi-Fi나 기기 간 통신을 차단하는 네트워크에서는 연결되지 않을 수 있습니다.</li>
+        <li>PC 주소가 여러 개라면 <strong>PC의 Wi-Fi 설정에 표시된 IP 주소</strong>와 같은 항목을 선택합니다. 휴대폰의 핫스팟 주소를 선택하는 것이 아닙니다.</li>
+        <li>PC 방화벽이 프로그램의 <strong>4311 포트</strong> 연결을 허용하는지 확인합니다.</li>
+      </ul>
+      <h3>Wi-Fi·핫스팟을 바꿨거나 PC 주소가 바뀐 경우</h3>
+      <ol>
+        <li>PC의 <strong>기기 연결 → 기존 연결 파일 열기</strong>에서 보관한 파일을 엽니다.</li>
+        <li>현재 PC 주소를 선택하고 <strong>선택한 PC 주소로 갱신 → 연결 파일 저장</strong>을 누릅니다.</li>
+        <li>갱신한 파일을 휴대폰으로 옮겨 <strong>PC 연결 파일 가져오기</strong>로 다시 선택한 뒤 <strong>지금 동기화</strong>를 누릅니다.</li>
+      </ol>
+      <p class="note">주소 변경에는 새 연결 파일을 만들지 않습니다. 기존 파일의 주소를 갱신하면 같은 비밀 키와 알림을 유지합니다. 이전 시작 파일 방식은 네트워크 변경 뒤 PC 프로그램을 다시 실행해야 할 수 있습니다.</p>
+    </section>
+
+    <section aria-labelledby="ai-title">
+      <h2 id="ai-title">AI 사용은 선택 사항</h2>
+      <p>AI 모델 없이도 규칙으로 알림을 분류합니다. AI를 사용하려면 휴대폰에서 모델을 가져오거나 PC 앱의 <strong>PC AI 설치</strong>로 모델을 준비한 뒤, 휴대폰 설정에서 사용할 AI와 우선 기기를 선택합니다.</p>
+      <p>PC AI를 사용하려면 PC 알림함을 열고 잠금을 해제해 두어야 합니다. 연결 파일 가져오기와 AI 모델 설치는 각각 별도 절차입니다.</p>
+    </section>
+
+    <footer>
+      <nav class="document-nav" aria-label="공개 문서">
+        <a href="index.html">공개 문서 홈</a>
+        <a href="privacy.html">개인정보처리방침</a>
+      </nav>
+      <p class="updated">안내 기준: 2026년 10월 14일</p>
+    </footer>
+  </main>
+</body>
+</html>
