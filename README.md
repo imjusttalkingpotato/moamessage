@@ -7,7 +7,7 @@
 - 개발자: talkingpotato
 - 문의: imjusttalkingpotato@gmail.com
 
-[Mac용 PC 프로그램 ZIP 다운로드](https://github.com/imjusttalkingpotato/moamessage/releases/download/pc-files-v0.1.54-docs2/moa-message-pc-macos-0.1.54.zip)
+[Mac용 PC 프로그램 ZIP 다운로드](https://github.com/imjusttalkingpotato/moamessage/releases/download/pc-files-v0.1.54-docs3/moa-message-pc-macos-0.1.54.zip)
 
 0.1.54 · Apple Silicon Mac · macOS 13 이상 · 약 37 MB. 프로그램 폴더에서 실행합니다. 전체 패키지는 Apple 공증을 받지 않았으며 macOS의 개별 확인이나 실행 차단이 있을 수 있습니다.
 
