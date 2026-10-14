@@ -33,11 +33,11 @@
     <div class="brand">모아메시지</div>
     <h1>PC 설치·연결 방법</h1>
     <p>PC와 연결하면 휴대폰에서 모은 알림을 PC에서도 확인하고 분류할 수 있습니다. PC 연결은 선택 사항이며 휴대폰만 사용할 수도 있습니다.</p>
-    <a class="download" href="https://github.com/imjusttalkingpotato/moamessage/releases/download/macos-v0.1.54/moa-message-macos-0.1.54.dmg">Mac용 PC 앱 다운로드</a>
-    <p class="download-meta">0.1.54 · Apple Silicon Mac · macOS 13 이상 · DMG 약 41 MB</p>
+    <a class="download" href="https://github.com/imjusttalkingpotato/moamessage/releases/download/pc-files-v0.1.54/moa-message-pc-macos-0.1.54.zip">Mac용 PC 프로그램 다운로드</a>
+    <p class="download-meta">0.1.54 · Apple Silicon Mac · macOS 13 이상 · ZIP 약 37 MB</p>
     <div class="distribution-note">
-      <p><strong>무료로 직접 배포하는 설치 파일입니다. Developer ID 서명과 Apple 공증을 받지 않았습니다.</strong></p>
-      <p>macOS가 실행을 차단하거나 해당 앱에 대한 별도 확인을 요구할 수 있습니다. Windows와 Intel Mac용 설치 파일은 제공하지 않습니다.</p>
+      <p><strong>ZIP을 풀어 프로그램 폴더에서 실행하는 무료 배포 방식입니다. 실행에 필요한 파일을 함께 담았습니다.</strong></p>
+      <p>모아메시지 전체 패키지는 Apple 공증을 받지 않았습니다. macOS가 실행을 차단하거나 해당 파일에 대한 별도 확인을 요구할 수 있습니다. ZIP으로 받아도 macOS의 확인 절차가 없어지는 것은 아닙니다. Windows와 Intel Mac용 실행 파일은 제공하지 않습니다.</p>
     </div>
     <nav class="document-nav" aria-label="안내 순서">
       <a href="#install">PC 설치·실행</a>
@@ -46,15 +46,17 @@
     </nav>
 
     <section id="install" aria-labelledby="install-title">
-      <h2 id="install-title">1. PC 설치·실행</h2>
-      <p>모아메시지 PC 앱은 DMG로 설치합니다.</p>
-      <h3>DMG 설치</h3>
+      <h2 id="install-title">1. 프로그램 폴더 준비·실행</h2>
       <ol>
-        <li>DMG를 열고 <strong>모아메시지 앱을 Applications(응용 프로그램) 폴더로 옮깁니다.</strong></li>
-        <li>응용 프로그램 폴더에서 모아메시지를 실행합니다. PC 프로그램이 시작되고 준비가 끝나면 브라우저에 알림함이 열립니다.</li>
-        <li>앱 창의 <strong>알림함 열기</strong>를 눌러 PC 알림함을 엽니다.</li>
+        <li>위의 다운로드 버튼으로 받은 <strong>moa-message-pc-macos-0.1.54.zip</strong>을 펼칩니다.</li>
+        <li>압축에서 나온 <strong>모아메시지-PC 폴더 전체</strong>를 원하는 위치로 옮깁니다. 시작 파일만 따로 옮기지 마세요.</li>
+        <li>기존 모아메시지 프로그램이 실행 중이라면 먼저 종료합니다. DMG 앱은 <strong>모아메시지 메뉴 → 종료(⌘Q)</strong>, 터미널에서 실행한 프로그램은 <strong>Control(⌃)+C</strong>로 종료합니다.</li>
+        <li>폴더 안의 <strong>모아메시지_시작.command</strong>를 더블클릭합니다.</li>
+        <li>PC 프로그램이 준비되면 브라우저에서 PC 알림함이 열립니다. 사용하는 동안 실행된 터미널 창을 유지합니다.</li>
       </ol>
-      <p class="note">PC에서 알림을 받으려면 모아메시지 PC 앱이 실행 중이어야 합니다.</p>
+      <p class="note">PC에서 알림을 받으려면 PC 프로그램이 실행 중이어야 합니다. 종료하려면 해당 터미널에서 <strong>Control(⌃)+C</strong>를 누릅니다. 브라우저 창만 닫으면 PC 프로그램은 계속 실행됩니다.</p>
+      <p>기존 DMG 앱과 같은 저장 위치를 사용하므로 메시지·모델을 이어서 사용합니다. 기존에 연결했다면 PC의 <strong>기기 연결 → 기존 연결 파일 열기</strong>에서 같은 파일을 여세요. 예전 개발용 프로그램 폴더의 기록은 자동으로 옮기지 않습니다.</p>
+      <p>모아메시지가 이미 실행 중이면 기존 서버의 알림함을 엽니다. 다른 프로그램이 같은 포트를 사용한다는 안내가 나오면 그 프로그램을 확인한 뒤 다시 실행하세요.</p>
     </section>
 
     <section id="connect" aria-labelledby="connect-title">
@@ -95,7 +97,8 @@
 
     <section aria-labelledby="ai-title">
       <h2 id="ai-title">AI 사용은 선택 사항</h2>
-      <p>AI 모델 없이도 규칙으로 알림을 분류합니다. AI를 사용하려면 휴대폰에서 모델을 가져오거나 PC 앱의 <strong>PC AI 설치</strong>로 모델을 준비한 뒤, 휴대폰 설정에서 사용할 AI와 우선 기기를 선택합니다.</p>
+      <p>AI 모델 없이도 규칙으로 알림을 분류합니다. AI를 사용하려면 휴대폰에서 모델을 가져오거나 프로그램 폴더의 <strong>모아메시지_AI_설치.command</strong>를 실행해 PC 모델을 준비한 뒤, 휴대폰 설정에서 사용할 AI와 우선 기기를 선택합니다.</p>
+      <p>PC 모델은 자동으로 설치되지 않습니다. 처음 설치할 때 인터넷 연결이 필요하며, 모델 약 2.5 GB와 실행 파일·임시 파일을 위한 추가 저장 공간을 준비하세요.</p>
       <p>PC AI를 사용하려면 PC 알림함을 열고 잠금을 해제해 두어야 합니다. 연결 파일 가져오기와 AI 모델 설치는 각각 별도 절차입니다.</p>
     </section>
 
